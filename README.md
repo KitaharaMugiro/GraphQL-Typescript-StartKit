@@ -19,7 +19,17 @@ npm run start
 
 ```
 query {
-  hello(name:"jack")
+  messages {
+    id,
+    user,
+    content
+  }
+}
+```
+
+```
+mutation {
+  postMessage(user: "user", content:"hoge")
 }
 ```
 
@@ -27,9 +37,11 @@ query {
 
 - [x] grapql-yogaのインストール & コマンドのセットアップ
 - [x] TypeScriptのインストール
-- [x] デモページ
+- [x] デモページ(Query, Mutation)
+- [x] Pubsub(Websocket)
 - [ ] テスト環境のセットアップ
 - [ ] 最低限必要なライブラリのインストール
 - [ ] ホットリロード
 - [ ] ベストプラクティスのディレクトリ構造
 - [ ] デモをリッチにさせてGraphQLを利用する際のテンプレにする
+- [ ] TypeScriptを生かしたプラクティスの導入
