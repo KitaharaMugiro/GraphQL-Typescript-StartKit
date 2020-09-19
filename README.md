@@ -52,6 +52,16 @@ mutation {
 npm run generate
 ```
 
+# Schema First Development
+① Schemaを記述する
+② Typeを自動生成する
+③ Resolverを実装する
+
+所感としてはやりにくい。。もう少しベストプラクティスを見たい。
+
+
+対応するCode First Developmentについてはこちら
+https://www.prisma.io/blog/introducing-graphql-nexus-code-first-graphql-server-development-ll6s1yy5cxl5
 
 # ドキュメント
 [GraphQL Code Generator](https://graphql-code-generator.com/)

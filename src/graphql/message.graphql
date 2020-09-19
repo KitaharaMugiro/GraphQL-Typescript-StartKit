@@ -1,17 +1,24 @@
-  type Message {
-    id: ID!
-    user: String!
-    content: String!
-  }
+type Message {
+  id: ID!
+  user: String!
+  content: String!
+}
 
-  type Query {
-    messages: [Message!]
-  }
-  
-  type Mutation {
-    postMessage(user: String!, content: String!): ID!
-  }
-  
-  type Subscription {
-    messages: [Message!]
-  }
+schema {
+  query: Query,
+  mutation: Mutation,
+  subscription: Subscription
+}
+
+
+type Query {
+  messages: [Message!]
+}
+
+type Mutation {
+  postMessage(user: String!, content: String!): ID!
+}
+
+type Subscription {
+  messages: [Message!]
+}

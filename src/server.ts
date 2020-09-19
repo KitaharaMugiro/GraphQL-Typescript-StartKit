@@ -1,5 +1,5 @@
 import { GraphQLServer, PubSub } from 'graphql-yoga'
-import { Message, Resolvers } from "./generated/graphql"
+import { Message, Resolvers } from "./generated/message"
 
 const messages: Message[] = [];
 const subscribers = [];
@@ -23,6 +23,7 @@ const resolvers: Resolvers = {
       return id
     }
   },
+
   Subscription: {
     messages: {
       subscribe: (parent, args, { pubsub }) => {

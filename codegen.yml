@@ -1,11 +1,15 @@
 overwrite: true
-schema: "./src/graphql/**/*.graphql"
 documents: null
 generates:
-  src/generated/graphql.ts:
-    plugins:
-      - "typescript"
-      - "typescript-resolvers"
   ./graphql.schema.json:
+    schema: "./src/graphql/**/*.graphql"
     plugins:
       - "introspection"
+  src/generated/message.ts:
+    schema: "./src/graphql/message.graphql"
+    plugins:
+      - "typescript"
+      - typescript-resolvers
+    config:
+      skipTypename: true
+      avoidOptionals: false

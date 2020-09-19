@@ -12,19 +12,16 @@ export type Scalars = {
 };
 
 export type Message = {
-  __typename?: 'Message';
   id: Scalars['ID'];
   user: Scalars['String'];
   content: Scalars['String'];
 };
 
 export type Query = {
-  __typename?: 'Query';
   messages?: Maybe<Array<Message>>;
 };
 
 export type Mutation = {
-  __typename?: 'Mutation';
   postMessage: Scalars['ID'];
 };
 
@@ -35,7 +32,6 @@ export type MutationPostMessageArgs = {
 };
 
 export type Subscription = {
-  __typename?: 'Subscription';
   messages?: Maybe<Array<Message>>;
 };
 
