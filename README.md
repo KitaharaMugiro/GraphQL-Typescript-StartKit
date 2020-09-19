@@ -39,9 +39,19 @@ mutation {
 - [x] TypeScriptのインストール
 - [x] デモページ(Query, Mutation)
 - [x] Pubsub(Websocket)
+- [x] GraphQL Code Generator
 - [ ] テスト環境のセットアップ
-- [ ] 最低限必要なライブラリのインストール
 - [ ] ホットリロード
-- [ ] ベストプラクティスのディレクトリ構造
-- [ ] デモをリッチにさせてGraphQLを利用する際のテンプレにする
-- [ ] TypeScriptを生かしたプラクティスの導入
+- [ ] Authorization
+- [ ] AppSyncs
+
+# GraphQL Code Generatorの使い方
+設定ファイルcodegen.ymlをもとに以下スクリプトで自動的に型ファイルが生成される。
+
+```
+npm run generate
+```
+
+
+# ドキュメント
+[GraphQL Code Generator](https://graphql-code-generator.com/)
