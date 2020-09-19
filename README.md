@@ -63,5 +63,11 @@ npm run generate
 対応するCode First Developmentについてはこちら
 https://www.prisma.io/blog/introducing-graphql-nexus-code-first-graphql-server-development-ll6s1yy5cxl5
 
+# AppSyncについて
+## データソース
+AppSyncのバックエンドとなるデータストアを**データソース**と呼ぶ。
+データソースとして DynamoDB や AWS Lambda、Amazon Elasticsearch Service、GraphQL 等が用意されている。
+
+
 # ドキュメント
 [GraphQL Code Generator](https://graphql-code-generator.com/)
